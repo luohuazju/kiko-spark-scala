@@ -1,6 +1,10 @@
 # kiko-spark-scala
 spark scala latest version
 
+```
+sbt clean package
+```
+
 Count
 
 ```

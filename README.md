@@ -12,6 +12,11 @@ Count
 >spark-submit --driver-memory 2g --class com.kiko.spark.trips.Count ./target/scala-2.12/kiko-spark-scala_2.12-0.1.jar /Users/carl/spark_data/csv/trips > ./output/count.out 2> ./output/count.err
 ```
 
+Submit to Standalone Cluster
+```
+spark-submit --name "spark-kiko-count" --driver-memory 1g --class com.kiko.spark.trips.Count --master spark://centos7-master:7077 ./target/scala-2.12/kiko-spark-scala_2.12-0.1.jar /opt/spark_data/csv/trips
+```
+
 Tips
 ```
 >. ~/.zshrc
